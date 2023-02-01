@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <title>ParadoxX-Companny</title>
+        <link rel="stylesheet" href="./css/info.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="menulist">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="info.html">INFO</a></li>
+                        <li><a href="team.html">TEAM</a></li>
+                        <li><a href="room.html">ABOUT PARADOX-</a></li>
+                        <li><a href="sign-up.html">SIGN UP</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" 
+                onclick="togglemenu()">
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <h2>More of ParadoxX-Academy</h2>
+                    <h3>ParadoxX-Coders-Academy is a company that helps people learn to code. We offer courses for people of all skill levels, from beginners to experts. Our goal is to help everyone reach their coding goals...</h3>
+                    <br>
+                    <br>
+                    <button type="button">Learn More<img src="images/arrow.png"></button>
+                </div>
+                <div class="col-2">
+                    <img src="images/man.png" class="controller">
+                    <div class="color-box">
+
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="social-icons">
+                    <h3>Contact ParadoxX-</h3>
+                    <img src="images/fb.png" alt="">
+                    <img src="images/tw.png" alt="">
+                    <img src="images/ig.png" alt="">
+                </div>
+            </footer>
+        </div>
+        <script>
+
+            var menulist = document.getElementById("menulist");
+
+            menulist.style.maxHeight = "0px";
+
+            function togglemenu(){
+                if(menulist.style.maxHeight == "0px")
+                {
+                    menulist.style.maxHeight = "130px"
+                }
+                else{
+                    menulist.style.maxHeight = "0px"
+                }
+            }
+
+
+        </script>
+    </body>
+</html>
